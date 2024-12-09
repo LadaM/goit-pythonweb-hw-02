@@ -4,7 +4,7 @@ services:
       context: .
       dockerfile: Dockerfile
     environment:
-      - SQLALCHEMY_DATABASE_URL=postgresql+psycopg2://postgres:567234@db:5432/hw02
+      - SQLALCHEMY_DATABASE_URL=postgresql+psycopg2://postgres:567234@repository:5432/hw02
     depends_on:
       - db
     ports:
